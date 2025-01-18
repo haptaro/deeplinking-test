@@ -11,3 +11,8 @@ npx uri-scheme open my-deeplinking-app://explore --ios
 ```bash
 npx uri-scheme open my-deeplinking-app://explore/modal --ios
 ```
+
+# Open up the Test screen
+```bash
+npx uri-scheme open my-deeplinking-app://abcde --ios
+```
