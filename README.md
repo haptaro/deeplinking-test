@@ -1,3 +1,5 @@
+# Customizing links
+https://docs.expo.dev/router/advanced/native-intent/
 
 # Open up the explore screen
 ```bash
