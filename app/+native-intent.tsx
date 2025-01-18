@@ -1,3 +1,5 @@
+import { handleUniversalLink } from '@/utils/handleUniversalLink'
+
 export function redirectSystemPath({ path, initial }: { path: string, initial: boolean }): string {
     // manipurate the path before passing it to native
     if (initial) {
@@ -5,23 +7,5 @@ export function redirectSystemPath({ path, initial }: { path: string, initial: b
         return path
       }
     
-      // Need to write unit test for this function
       return handleUniversalLink(path)
-  }
-
-  // Need to write unit test for this function
-  function handleUniversalLink(urlString: string): string {  
-    console.log('>>> Universal link:', urlString)
-    try {
-      // do some validatoin here
-      if (urlString.includes("abcde")) {
-        return "my-deeplinking-app://test"
-      } else {
-        return urlString
-      }
-
-      return urlString
-    } catch (error) {
-      return '+not-found';
-    }
   }
